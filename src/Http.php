@@ -6,7 +6,7 @@ class Http
 {
     public static function status($code)
     {
-        $httpStatus = array(
+        $httpStatus = [
             '100' => 'Continue',
             '101' => 'Switching protocols',
             '102'=>'Processing',
@@ -70,7 +70,7 @@ class Http
             '508'=>'Loop Detected',
             '510'=>'Not Extended',
             '511'=>'Network Authentication Required',
-        );
+        ];
 
         return $httpStatus[$code];
     }
